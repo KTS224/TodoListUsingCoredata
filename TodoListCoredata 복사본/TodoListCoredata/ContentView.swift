@@ -89,6 +89,20 @@ struct ContentView: View {
         }
     }
     
+//    func move(from source: IndexSet, to destination: Int) {
+////        CoreDataManager.shared.move(fromOffsets: source, toOffset: destination)
+//        Priority.move(fromOffsets: source, toOffset: destination)
+//
+//    }
+  
+//    func move(from source: IndexSet, to destination: Int){
+//        self.todos.move(fromOffsets: source, toOffset: destination)
+//    }
+//    
+    
+    
+    
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -145,6 +159,7 @@ struct ContentView: View {
                 Spacer()
             }
             .padding()
+            .navigationBarItems(trailing: EditButton().colorInvert())
             .navigationTitle("All Tasks")
             .background(Color.pink.opacity(0.2))
             .background(Color.blue.ignoresSafeArea())
